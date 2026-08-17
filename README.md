@@ -6,22 +6,22 @@ A Java Swing desktop application designed to manage gym memberships, track atten
 
 ## 📌 Project Overview
 
-The **Gym Member Management System** provides an interactive Graphical User Interface (GUI) to handle two main categories of gym memberships: **Regular Members** and **Premium Members**[cite: 1]. It features registration handling, attendance tracking with loyalty reward mechanisms, plan upgrades, and payment tracking[cite: 1, 3, 4].
+The **Gym Member Management System** provides an interactive Graphical User Interface (GUI) to handle two main categories of gym memberships: **Regular Members** and **Premium Members**. It features registration handling, attendance tracking with loyalty reward mechanisms, plan upgrades, and payment tracking.
 
 ---
 
 ## ✨ Features
 
-* **Multi-Panel GUI Layout**: Built using Java Swing (`JFrame`, `JPanel`, `JButton`, `JComboBox`, `JTextField`)[cite: 1].
-* **Member Registration**: Register regular and premium members with full personal details and flexible start dates[cite: 1].
+* **Multi-Panel GUI Layout**: Built using Java Swing (`JFrame`, `JPanel`, `JButton`, `JComboBox`, `JTextField`).
+* **Member Registration**: Register regular and premium members with full personal details and flexible start dates.
 * **Tiered Membership Options**:
-  * **Regular Members**: Choice of Basic (6,500), Standard (12,500), or Deluxe (18,500) plans with attendance-based upgrade eligibility[cite: 4].
-  * **Premium Members**: Fixed premium plan (50,000) supporting full/partial payment tracking and discount calculations[cite: 3].
+  * **Regular Members**: Choice of Basic (6,500), Standard (12,500), or Deluxe (18,500) plans with attendance-based upgrade eligibility.
+  * **Premium Members**: Fixed premium plan (50,000) supporting full/partial payment tracking and discount calculations.
 * **Attendance & Rewards**:
-  * Regular Member: +1 attendance, +5 loyalty points[cite: 4].
-  * Premium Member: +1 attendance, +10 loyalty points[cite: 3].
-* **Member Management**: Membership activation, deactivation, and revert operations[cite: 1, 2].
-* **Input Validation & Data Checks**: Prevents duplicate IDs and handles input parsing safely using Swing dialog alerts (`JOptionPane`)[cite: 1].
+  * Regular Member: +1 attendance, +5 loyalty points.
+  * Premium Member: +1 attendance, +10 loyalty points.
+* **Member Management**: Membership activation, deactivation, and revert operations.
+* **Input Validation & Data Checks**: Prevents duplicate IDs and handles input parsing safely using Swing dialog alerts (`JOptionPane`).
 
 ---
 
@@ -31,17 +31,17 @@ The system demonstrates fundamental OOP principles:
 
 | Principle | Implementation in Code |
 | :--- | :--- |
-| **Abstraction** | `GymMember` is defined as an abstract parent class containing shared member properties and abstract methods[cite: 2]. |
-| **Inheritance** | `RegularMember` and `PremiumMember` extend `GymMember` to reuse common fields (`id`, `name`, `phone`, `email`, etc.)[cite: 2, 3, 4]. |
-| **Polymorphism** | Method overriding applied to `markAttendance()` and `display()` across subclasses[cite: 3, 4]. |
-| **Encapsulation** | Sensitive fields are kept `private` or `protected`, exposed via public accessors (`getters`) and mutator logic[cite: 2, 3, 4]. |
+| **Abstraction** | `GymMember` is defined as an abstract parent class containing shared member properties and abstract methods. |
+| **Inheritance** | `RegularMember` and `PremiumMember` extend `GymMember` to reuse common fields (`id`, `name`, `phone`, `email`, etc.). |
+| **Polymorphism** | Method overriding applied to `markAttendance()` and `display()` across subclasses. |
+| **Encapsulation** | Sensitive fields are kept `private` or `protected`, exposed via public accessors (`getters`) and mutator logic. |
 
 ---
 ## 📁 Class Structure
-**`GymMember.java`**: Abstract parent class holding base member details, attendance count, and loyalty logic[cite: 2].
-* **`RegularMember.java`**: Subclass managing regular plan tiers, upgrade conditions, and referral sources[cite: 4].
-* **`PremiumMember.java`**: Subclass managing premium pricing, trainer assignment, payment status, and discounts[cite: 3].
-* **`GymGUI.java`**: Entry point (`main`) handling Swing rendering, event dispatching, and list state[cite: 1].
+**`GymMember.java`**: Abstract parent class holding base member details, attendance count, and loyalty logic.
+* **`RegularMember.java`**: Subclass managing regular plan tiers, upgrade conditions, and referral sources.
+* **`PremiumMember.java`**: Subclass managing premium pricing, trainer assignment, payment status, and discounts.
+* **`GymGUI.java`**: Entry point (`main`) handling Swing rendering, event dispatching, and list state.
 
 ## 🛠️ Requirements & Prerequisites
 
