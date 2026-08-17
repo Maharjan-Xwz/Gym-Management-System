@@ -1,6 +1,6 @@
 # 🏋️ Gym Member Management System
 
-A Java Swing desktop application designed to manage gym memberships, track attendance, calculate loyalty points, and manage distinct plan tiers using Object-Oriented Programming (OOP) principles[cite: 1, 2, 3, 4].
+A Java Swing desktop application designed to manage gym memberships, track attendance, calculate loyalty points, and manage distinct plan tiers using Object-Oriented Programming (OOP) principles.
 
 ---
 
